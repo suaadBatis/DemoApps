@@ -1,3 +1,4 @@
+import io.appium.java_client.FindsByAndroidUIAutomator;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import java.net.MalformedURLException;
@@ -10,5 +11,8 @@ public class UiAuto extends base{
     driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
     //driver.findElementsByAndroidUIAutomator( "@attribute=value");
         driver.findElementsByAndroidUIAutomator("text(\"Views\")");
+        ((FindsByAndroidUIAutomator) driver).findElementByAndroidUIAutomator("(text(\"Views\")").click();
+         driver.findElementsByAndroidUIAutomator("new UiSelector().clickable(true)").size();
+      // there an issue with aapium to use this featuer UIAutomator
     }
 }

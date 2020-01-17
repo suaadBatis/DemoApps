@@ -1,9 +1,9 @@
 #.gitignore
  .idea/workspace.xml
- /.idea/
+ .idea/
+
  # Ignore Gradle GUI config
-/.gradle/
+.gradle/
 .gradletasknamecache
 !gradle-wrapper.jar
 gradle-app.setting
-/.idea/
