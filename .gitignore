@@ -1,6 +1,6 @@
 #.gitignore
- .idea/workspace.xml
- .idea/
+.idea/workspace.xml
+.idea/
 
  # Ignore Gradle GUI config
 .gradle/
