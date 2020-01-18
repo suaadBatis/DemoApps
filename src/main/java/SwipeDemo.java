@@ -19,5 +19,5 @@ public class SwipeDemo extends base {
         WebElement first = driver.findElementByXPath("//*[@content-desc='15']");
         WebElement sec = driver.findElementByXPath("//*[@content-desc='45']");
         t.longPress(longPressOptions().withElement(element(first)).withDuration(ofSeconds(1))).moveTo( element(sec)).release ().perform ();//for
-    }
+    } //we using this longPressOptions cause we need to more options for single element
 }
